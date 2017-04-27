@@ -1,0 +1,188 @@
+\relax 
+\citation{storm-web}
+\citation{Murray2013}
+\citation{Neumeyer2010}
+\citation{Qian2013}
+\citation{Hu2014}
+\citation{Condie2010}
+\citation{He2010}
+\citation{HStreaming}
+\citation{Zaharia2013}
+\citation{spark-summit}
+\citation{Dean2004}
+\citation{Zaharia2010C}
+\citation{Ananthanarayanan2013}
+\citation{Yadwadkar2014}
+\citation{Dean2004}
+\citation{Kwon2012}
+\citation{Ananthanarayanan2013}
+\citation{Yadwadkar2014}
+\citation{Zaharia2013}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
+\citation{Zaharia2013}
+\citation{Reiss2012}
+\citation{Kwon2012}
+\citation{Ananthanarayanan2010}
+\citation{Cheng2015}
+\citation{Dean2004}
+\citation{Zaharia2008}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Background and Motivation}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Background}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Principles of Batch Stream Processing System\relax }}{2}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{Fig. 1:}{{1}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Problem Analysis}{2}}
+\citation{Kwon2012}
+\citation{Ananthanarayanan2013}
+\citation{Yadwadkar2014}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Straggler mitigation under different strategies\relax }}{3}}
+\newlabel{Fig. 2:}{{2}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Speculative Execution}}}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {SkewTune}}}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Dolly}}}{3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Wrangler}}}{3}}
+\citation{Agarwal}
+\citation{Arimoto}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Recurring Batch Stream Jobs}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Stability of data properties and resource utilization across recurring jobs when running WordCount\relax }}{4}}
+\newlabel{Fig. 3:}{{3}{4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Data Properties}}}{4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Resource Utilization}}}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-D}}Challenges}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}System Design}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}System Overview}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Architecture of Lever\relax }}{5}}
+\newlabel{Fig. 4:}{{4}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Identify Potential Stragglers}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces An example for straggler's state transition\relax }}{5}}
+\newlabel{Fig. 6:}{{6}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Transition rules for identifying stragglers\relax }}{5}}
+\newlabel{Table1}{{I}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Computational Capability Determination}{5}}
+\citation{Arimoto}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Actions of Lever\relax }}{6}}
+\newlabel{Fig. 5:}{{5}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}1}Computational Capability}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The principle of evaluating computational capability with ILC.\relax }}{6}}
+\newlabel{Fig. 7:}{{7}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}2}Theoretical Data Assignment}{6}}
+\citation{spark-streaming}
+\citation{spark}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}Choose Suitable Helpers and Reassign Work}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}1}Strategies for Choosing Helpers}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces All Strategy selects all nodes in faster group as helpers.\relax }}{7}}
+\newlabel{Fig. 8:}{{8}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Two Choice Strategy selects two nodes in faster group as helpers.\relax }}{7}}
+\newlabel{Fig. 9:}{{9}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-D}2}Adaptively Choose One of Two}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}System Implementation}{7}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Pre-Scheduling Algorithm\relax }}{8}}
+\newlabel{Alg:1}{{1}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Implementation of Lever\relax }}{8}}
+\newlabel{Fig. 10:}{{10}{8}}
+\citation{Zaharia2013}
+\citation{HiBench}
+\citation{HiBench}
+\citation{HiBench}
+\citation{HiBench}
+\citation{HiBench}
+\citation{Zaharia2013}
+\citation{Zaharia2013}
+\citation{Zaharia2013}
+\citation{Zaharia2010B}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Experimental Evaluation}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Experimental Setup and Workloads}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Job Completion Time}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Normalized job completion time when running benchmarks under different techniques\relax }}{9}}
+\newlabel{Fig. 11:}{{11}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Benchmarks\relax }}{10}}
+\newlabel{Table2}{{II}{10}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Node's idle time for faster and median\relax }}{10}}
+\newlabel{Table3}{{III}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Task completion time in three types of nodes when running WordCount\relax }}{10}}
+\newlabel{Fig. 12:}{{12}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Adaptability for burst load}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Latency and Normalized Capability when running WordCount under burst load\relax }}{10}}
+\newlabel{Fig. 13:}{{13}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-D}}Data Locality and Queued Tasks}{10}}
+\citation{He2010}
+\citation{Condie2010}
+\citation{Zaharia2013}
+\citation{Li2011}
+\citation{Lam2012}
+\citation{Abadi2005}
+\citation{Qian2013}
+\citation{Murray2013}
+\citation{Toshniwal2014}
+\citation{Kulkarni2015}
+\citation{Logothetis2010}
+\citation{Peng2010}
+\citation{Bhatotia2011a}
+\citation{Zaharia2010B}
+\citation{Zaharia2008}
+\citation{Ahmad2012}
+\citation{Dean2004}
+\citation{Ananthanarayanan2010}
+\citation{Ananthanarayanan2013}
+\citation{Ananthanarayanan2014}
+\citation{Yadwadkar2014}
+\citation{Ananthanarayanan2011}
+\citation{Kwon2012}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Data Locality and Tasks which waiting time is greater than 3/4 batch interval when running Grep, WordCount and Topk\relax }}{11}}
+\newlabel{Fig. 14:}{{14}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-E}}All Strategy or Two Choice Strategy}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Results under different straggler situations using two strategies\relax }}{11}}
+\newlabel{Fig. 15:}{{15}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Related Work}{11}}
+\citation{Shah2003}
+\citation{Cherniack2003}
+\citation{Xing2005}
+\citation{Anis2015}
+\citation{Shah2003}
+\citation{Cherniack2003}
+\citation{Xing2005}
+\citation{Anis2015}
+\bibstyle{IEEEtran}
+\bibdata{MyCollection}
+\bibcite{storm-web}{1}
+\bibcite{Murray2013}{2}
+\bibcite{Neumeyer2010}{3}
+\bibcite{Qian2013}{4}
+\bibcite{Hu2014}{5}
+\bibcite{Condie2010}{6}
+\bibcite{He2010}{7}
+\bibcite{HStreaming}{8}
+\bibcite{Zaharia2013}{9}
+\bibcite{spark-summit}{10}
+\bibcite{Dean2004}{11}
+\bibcite{Zaharia2010C}{12}
+\bibcite{Ananthanarayanan2013}{13}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion}{12}}
+\@writefile{toc}{\contentsline {section}{References}{12}}
+\bibcite{Yadwadkar2014}{14}
+\bibcite{Kwon2012}{15}
+\bibcite{Reiss2012}{16}
+\bibcite{Ananthanarayanan2010}{17}
+\bibcite{Cheng2015}{18}
+\bibcite{Zaharia2008}{19}
+\bibcite{Agarwal}{20}
+\bibcite{Arimoto}{21}
+\bibcite{spark-streaming}{22}
+\bibcite{spark}{23}
+\bibcite{HiBench}{24}
+\bibcite{Zaharia2010B}{25}
+\bibcite{Li2011}{26}
+\bibcite{Lam2012}{27}
+\bibcite{Abadi2005}{28}
+\bibcite{Toshniwal2014}{29}
+\bibcite{Kulkarni2015}{30}
+\bibcite{Logothetis2010}{31}
+\bibcite{Peng2010}{32}
+\bibcite{Bhatotia2011a}{33}
+\bibcite{Ahmad2012}{34}
+\bibcite{Ananthanarayanan2014}{35}
+\bibcite{Ananthanarayanan2011}{36}
+\bibcite{Shah2003}{37}
+\bibcite{Cherniack2003}{38}
+\bibcite{Xing2005}{39}
+\bibcite{Anis2015}{40}

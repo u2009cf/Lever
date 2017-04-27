@@ -1,0 +1,527 @@
+@misc{storm-web,
+title = "Storm",
+howpublished = "http://storm.apache.org"
+}
+@misc{spark,
+title = "Spark",
+howpublished = "http://spark.apache.org"
+}
+@misc{spark-streaming,
+title = "Spark Streaming",
+howpublished = "http://spark.apache.org/streaming"
+}
+@misc{HiBench,
+title = "HiBench",
+howpublished = "http://github.com/intel-hadoop/HiBench"
+}
+@misc{spark-summit,
+title = "Spark Summit",
+howpublished = "http://spark-summit.org"
+}
+@article{Agarwal,
+author = {Agarwal, Sameer and Kandula, Srikanth and Bruno, Nicolas and Wu, Ming-chuan and Stoica, Ion and Zhou, Jingren},
+file = {:K$\backslash$:/研究生课程/流计算/Re-optimizing Data-Parallel Computing.pdf:pdf},
+title = {{Re-optimizing Data-Parallel Computing}},
+journal = {Proceedings of the 9th USENIX Symposium on Networked Systems Design and Implementation (NSDI '12)},
+pages = {281--294},
+year = {2012}
+}
+@article{Arimoto,
+author = {S.Arimoto, S.Kawamura and F.Miyazaki },
+title = {Bettering operation of dynamic systems by learning: a new control theory for servomechanism or mechatronic system},
+journal = {Proceedings of 23rd Conference on Decision and Control},
+pages = {1064--1069},
+year = {1984}
+}
+@article{Reiss2012,
+abstract = {To better understand the challenges in developing effective cloud-based resource schedulers, we analyze the first publicly available trace data from a sizable multi-purpose cluster. The most notable workload characteristic is heterogeneity: in resource types (e.g., cores:RAM per machine) and their usage (e.g., duration and resources needed). Such heterogeneity reduces the effectiveness of traditional slot- and core-based scheduling. Furthermore, some tasks are constrained as to the kind of machine types they can use, increasing the complexity of resource assignment and complicating task migration. The workload is also highly dynamic, varying over time and most workload features, and is driven by many short jobs that demand quick scheduling decisions. While few simplifying assumptions apply, we find that many longer-running jobs have relatively stable resource utilizations, which can help adaptive resource schedulers.},
+author = {Reiss, Charles and Tumanov, Alexey and Ganger, Gregory R. and Katz, Randy H. and Kozuch, Michael a.},
+doi = {10.1145/2391229.2391236},
+file = {:K$\backslash$:/研究生课程/流计算/Heterogeneity and Dynamicity of Clouds at Scale Google Trace Analysis.pdf:pdf},
+isbn = {9781450317610},
+journal = {Proceedings of the 3th ACM Symposium on Cloud Computing (SoCC '12)},
+pages = {1--13},
+title = {{Heterogeneity and Dynamicity of Clouds at Scale: Google Trace Analysis}},
+year = {2012}
+}
+@article{Cheng2015,
+author = {Cheng, Dazhao and Lama, Palden and Jiang, Changjun and Zhou, Xiaobo},
+doi = {10.1109/ICDCS.2015.44},
+file = {:K$\backslash$:/研究生课程/流计算/Towards Energy Efficiency in Heterogeneous Hadoop Clusters by Adaptive Task Assignment.pdf:pdf},
+title = {{Towards Energy Efficiency in Heterogeneous Hadoop Clusters by Adaptive Task Assignment}},
+journal = { IEEE International Conference on Distributed Computing Systems (ICDCS '15)},
+year = {2015}
+}
+@article{Neumeyer2010,
+abstract = {S4 is a general-purpose, distributed, scalable, partially fault-tolerant, pluggable platform that allows programmers to easily develop applications for processing continuous unbounded streams of data. Keyed data events are routed with affinity to Processing Elements (PEs), which consume the events and do one or both of the following: (1) emit one or more events which may be consumed by other PEs, (2) publish results. The architecture resembles the Actors model, providing semantics of encapsulation and location transparency, thus allowing applications to be massively concurrent while exposing a simple programming interface to application developers. In this paper, we outline the S4 architecture in detail, describe various applications, including real-life deployments. Our design is primarily driven by large scale applications for data mining and machine learning in a production environment. We show that the S4 design is surprisingly flexible and lends itself to run in large clusters built with commodity hardware.},
+author = {Neumeyer, Leonardo and Robbins, Bruce and Nair, Anish and Kesari, Anand},
+doi = {10.1109/ICDMW.2010.172},
+file = {:K$\backslash$:/研究生课程/流计算/S4 Distributed Stream Computing Platform.pdf:pdf},
+isbn = {9780769542577},
+issn = {15504786},
+journal = {IEEE International Conference on Data Mining Workshops (ICDMW'10)},
+keywords = {Actors programming model,Complex event processing,Concurrent programming,Data processing,Distributed programming,Map-reduce,Middleware,Parallel programming,Real-time search,Software design,Stream computing},
+pages = {170--177},
+title = {{S4: Distributed stream computing platform}},
+year = {2010}
+}
+@article{Murray2013,
+abstract = {Naiad is a distributed system for executing data parallel, cyclic dataflow programs. It offers the high throughput of batch processors, the low latency of stream processors, and the ability to perform iterative and incremental computations. Although existing systems offer some of these features, applications that require all three have relied on multiple platforms, at the expense of efficiency, maintainability, and simplicity. Naiad resolves the complexities of combining these features in one framework. A new computational model, timely dataflow, underlies Naiad and captures opportunities for parallelism across a wide class of algorithms. This model enriches dataflow computation with timestamps that represent logical points in the computation and provide the basis for an efficient, lightweight coordination mechanism. We show that many powerful high-level programming models can be built on Naiad's low-level primitives, enabling such diverse tasks as streaming data analysis, iterative machine learning, and interactive graph mining. Naiad outperforms specialized systems in their target application domains, and its unique features enable the development of new high-performance applications.},
+author = {Murray, Derek and McSherry, Frank and Isaacs, Rebecca and Isard, Michael and Barham, Paul and Abadi, Mart'ın},
+doi = {doi: 10.1145/2517349.2522738},
+file = {:K$\backslash$:/研究生课程/流计算/Naiad A Timely Dataflow System.pdf:pdf},
+isbn = {978-1-4503-2388-8},
+journal = {Proceedings of the 24th ACM Symposium on Operating Systems Principles (SOSP '13)},
+keywords = {distributed-systems,parallel-computing,streaming,workflows},
+pages = {439--455},
+title = {{Naiad: A Timely Dataflow System}},
+year = {2013}
+}
+@article{Qian2013,
+abstract = {TimeStream is a distributed system designed specifically for low-latency continuous processing of big streaming data on a large cluster of commodity machines. The unique characteristics of this emerging application domain have led to a significantly different design from the popular MapReducestyle batch data processing. In particular, we advocate a powerful new abstraction called resilient substitution that caters to the specific needs in this new computation model to handle failure recovery and dynamic reconfiguration in response to load changes. Several real-world applications running on our prototype have been shown to scale robustly with low latency while at the same time maintaining the simple and concise declarative programming model. TimeStream handles an on-line advertising aggregation pipeline at a rate of 700,000 URLs per second with a 2-second delay, while performing sentiment analysis of Twitter data at a peak rate close to 10,000 tweets per second, with approximately 2- second delay.},
+author = {Qian, Zhengping and He, Yong and Su, Chunzhi and Wu, Zhuojie and Zhu, Hongyu and Zhang, Taizhi and Zhou, Lidong and Yu, Yuan and Zhang, Zheng},
+doi = {10.1145/2465351.2465353},
+file = {:K$\backslash$:/研究生课程/流计算/TimeStream Reliable Stream Computation in the Cloud.pdf:pdf},
+isbn = {9781450319942},
+journal = {Proceedings of the 8th ACM European Conference on Computer Systems (EuroSys '13)},
+keywords = {cluster computing,distributed stream processing,dynamic,fault-tolerance,real-time,reconfiguration,resilient substitution,streaminsight},
+pages = {1--14},
+title = {{TimeStream: Reliable Stream Computation in the Cloud}},
+year = {2013}
+}
+@article{Hu2014,
+author = {Hu, Liting and Schwan, Karsten and Amur, Hrishikesh and Chen, Xin},
+file = {:K$\backslash$:/研究生课程/流计算/atc14{\_}slides{\_}hu.pdf:pdf},
+isbn = {978-1-931971-10-2},
+journal = {Proceedings of the 2014 USENIX conference on USENIX Annual Technical Conference (ATC'14)},
+pages = {25--36},
+title = {{ELF: efficient lightweight fast stream processing at scale}},
+year = {2014}
+}
+@article{Dean2004,
+abstract = {MapReduce is a programming model and an associated implementation for processing and generating large data sets. Users specify a map function that processes a key/value pair to generate a set of intermediate key/value pairs, and a reduce function that merges all intermediate values associated with the same intermediate key. Many real world tasks are expressible in this model, as shown in the paper. Programs written in this functional style are automatically parallelized and executed on a large cluster of commodity machines. The run-time system takes care of the details of partitioning the input data, scheduling the program’s execution across a set of machines, handling machine failures, and managing the required inter-machine communication. This allows programmers without any experience with parallel and distributed systems to easily utilize the resources of a large distributed system. Our implementation of MapReduce runs on a large cluster of commodity machines and is highly scalable: a typical MapReduce computation processes many terabytes of data on thousands of machines. Programmers find the system easy to use: hundreds of MapReduce programs have been implemented and upwards of one thousand MapReduce jobs are executed on Google’s clusters every day.},
+archivePrefix = {arXiv},
+arxivId = {10.1.1.163.5292},
+author = {Dean, Jeffrey and Ghemawat, Sanjay},
+doi = {10.1145/1327452.1327492},
+eprint = {10.1.1.163.5292},
+file = {:K$\backslash$:/研究生课程/流计算/MapReduce Simplified Data Processing on Large Clusters.pdf:pdf},
+isbn = {9781595936868},
+issn = {00010782},
+journal = {Proceedings of the 6th USENIX Symposium on Operating Systems Design and Implementation (OSDI'04)},
+pages = {137--149},
+pmid = {11687618},
+title = {{MapReduce: Simplified Data Processing on Large Clusters}},
+year = {2004}
+}
+@article{Zaharia2010C,
+abstract = {MapReduce and its variants have been highly successful in implementing large-scale data-intensive applications on commodity clusters. However; Spark introduces an abstraction called resilient distributed datasets (RDDs). An RDD is a read-only collection of objects partitioned across a set of machines that can be rebuilt if a partition is lost. Spark can outperform Hadoop by 10x in iterative machine learning jobs; and can be used to interactively query a 39 GB dataset with sub-second response time.; as well as interactive data analysis tools. We propose a new framework called Spark that supports these applications while retaining the scalability and fault tolerance of MapReduce. To achieve these goals; most of these systems are built around an acyclic data flow model that is not suitable for other popular applications. This paper focuses on one such class of applications: those that reuse a working set of data across multiple parallel operations. This includes many iterative machine learning algorithms},
+author = {Zaharia, Matei and Chowdhury, Mosharaf and Franklin, Michael J and Shenker, Scott and Stoica, Ion},
+doi = {10.1007/s00256-009-0861-0},
+file = {:K$\backslash$:/研究生课程/流计算/Spark - Cluster Computing withWorking Sets.pdf:pdf},
+isbn = {1432-2161 (Electronic)$\backslash$n0364-2348 (Linking)},
+issn = {03642348},
+journal = {Proceedings of the 2nd USENIX conference on Hot Topics in Cloud Computing (HotCloud'10)},
+pages = {10--16},
+pmid = {20205351},
+title = {{Spark : Cluster Computing with Working Sets}},
+year = {2010}
+}
+@article{Condie2010,
+author = {Condie, Tyson and Conway, Neil and Alvaro, Peter and Hellerstein, Joseph M. and Elmeleegy, Khaled and Sears, Russell},
+doi = {10.1.1.189.1288},
+file = {:K$\backslash$:/研究生课程/流计算/MapReduce online.pdf:pdf},
+journal = {Proceedings of the 7th USENIX Symposium on Networked Systems Design and Implementation (NSDI'10)},
+pages = {21--35},
+title = {{MapReduce online}},
+year = {2010}
+}
+@article{He2010,
+author = {He, Bingsheng and Yang, Mao and Guo, Zhenyu and Chen, Rishan and Su, Bing and Lin, Wei and Zhou, Lidong},
+file = {:K$\backslash$:/研究生课程/流计算/Comet Batched Stream Processing for Data Intensive Distributed Computing.pdf:pdf},
+isbn = {9781450300360},
+journal = {Proceedings of the 1st ACM Symposium on Cloud Computing (SoCC'10)},
+keywords = {batched stream processing,data-intensive scalable computing,query series,resource management},
+pages = {63--74},
+title = {{Comet: batched stream processing for data intensive distributed computing}},
+year = {2010}
+}
+@misc{HStreaming,
+title = "Hstreaming",
+howpublished = "http://www.hstreaming.com"
+}
+@article{Zaharia2013,
+abstract = {Many “big data” applications must act on data in real time. Running these applications at ever-larger scales re- quires parallel platforms that automatically handle faults and stragglers. Unfortunately, current distributed stream processing models provide fault recovery in an expen- sive manner, requiring hot replication or long recovery times, and do not handle stragglers. We propose a new processing model, discretized streams (D-Streams), that overcomes these challenges. D-Streams enable a par- allel recovery mechanism that improves efficiency over traditional replication and backup schemes, and tolerates stragglers.We show that they support a rich set of oper- ators while attaining high per-node throughput similar to single-node systems, linear scaling to 100 nodes, sub- second latency, and sub-second fault recovery. Finally, D-Streams can easily be composed with batch and in- teractive query models like MapReduce, enabling rich applications that combine these modes. We implement D-Streams in a system called Spark Streaming.},
+author = {Zaharia, Matei and Das, Tathagata and Li, Haoyuan and Hunter, Timothy and Shenker, Scott and Stoica, Ion},
+doi = {10.1145/2517349.2522737},
+file = {:K$\backslash$:/研究生课程/流计算/Discretized Streams Fault-Tolerant Streaming Computation at Scale.pdf:pdf},
+isbn = {9781450323888},
+journal = {Proceedings of the 24th ACM Symposium on Operating Systems Principles (SOSP'13)},
+pages = {423--438},
+title = {{Discretized Streams: Fault-Tolerant Streaming Computation at Scale}},
+year = {2013}
+}
+@article{Zaharia2008,
+abstract = {MapReduce is emerging as an important programming model for large-scale data-parallel applications such as web indexing, data mining, and scientific simulation. Hadoop is an open-source implementation of MapRe- duce enjoying wide adoption and is often used for short jobs where low response time is critical. Hadoop’s per- formance is closely tied to its task scheduler, which im- plicitly assumes that cluster nodes are homogeneous and tasks make progress linearly, and uses these assumptions to decide when to speculatively re-execute tasks that ap- pear to be stragglers. In practice, the homogeneity as- sumptions do not always hold. An especially compelling setting where this occurs is a virtualized data center, such as Amazon’s Elastic Compute Cloud (EC2). We show that Hadoop’s scheduler can cause severe performance degradation in heterogeneous environments. We design a new scheduling algorithm, Longest Approximate Time to End (LATE), that is highly robust to heterogeneity. LATE can improve Hadoop response times by a factor of 2 in clusters of 200 virtual machines on EC2.},
+author = {Zaharia, Matei and Konwinski, Andy and Joseph, Ad and Katz, Rh and Stoica, Ion},
+doi = {10.1109/IPDPSW.2010.5470880},
+file = {:K$\backslash$:/研究生课程/流计算/Improving MapReduce Performance in Heterogeneous Environments.pdf:pdf},
+isbn = {9781424465330},
+issn = {00267902},
+journal = {Proceedings of the 8th USENIX Symposium on Operating Systems Design and Implementation (OSDI'08)},
+pages = {29--42},
+title = {{Improving MapReduce Performance in Heterogeneous Environments.}},
+year = {2008}
+}
+@article{Zaharia2010B,
+abstract = {As organizations start to use data-intensive cluster computing systems like Hadoop and Dryad for more applications, there is a growing need to share clusters between users. However, there is a conflict between fairness in scheduling and data locality (placing tasks on nodes that contain their input data). We illustrate this problem through our experience designing a fair scheduler for a 600-node Hadoop cluster at Facebook. To address the conflict between locality and fairness, we propose a simple algorithm called delay scheduling: when the job that should be scheduled next according to fairness cannot launch a local task, it waits for a small amount of time, letting other jobs launch tasks instead. We find that delay scheduling achieves nearly optimal data locality in a variety of workloads and can increase throughput by up to 2x while preserving fairness. In addition, the simplicity of delay scheduling makes it applicable under a wide variety of scheduling policies beyond fair sharing.},
+author = {Zaharia, Matei and Borthakur, Dhruba and Sarma, Joydeep Sen and Elmeleegy, Khaled and Shenker, Scott and Stoica, Ion},
+doi = {10.1145/1755913.1755940},
+file = {:K$\backslash$:/研究生课程/流计算/Delay Scheduling A Simple Technique for Achieving Locality and Fairness in Cluster Scheduling.pdf:pdf},
+isbn = {9781605585772},
+journal = {Proceedings of the 5th European conference on Computer Systems (EuroSys'10)},
+keywords = {cluster computing, fair sharing, mapreduce, schedu},
+pages = {265--278},
+title = {{Delay scheduling: a simple technique for achieving locality and fairness in cluster scheduling}},
+year = {2010}
+}
+@article{Kwon2012,
+abstract = {We present an automatic skew mitigation approach for user-defined MapReduce programs and present SkewTune, a system that implements this approach as a drop-in replacement for an existing MapReduce implementation. There are three key challenges: (a) require no extra input from the user yet work for all MapReduce applications, (b) be completely transparent, and (c) impose minimal overhead if there is no skew. The SkewTune approach addresses these challenges and works as follows: When a node in the cluster becomes idle, SkewTune identifies the task with the greatest expected remaining processing time. The unprocessed input data of this straggling task is then proactively repartitioned in a way that fully utilizes the nodes in the cluster and preserves the ordering of the input data so that the original output can be reconstructed by concatenation. We implement SkewTune as an extension to Hadoop and evaluate its effectiveness using several real applications. The results show that SkewTune can significantly reduce job runtime in the presence of skew and adds little to no overhead in the absence of skew.},
+author = {Kwon, YongChul and Balazinska, Magdalena and Howe, Bill and Rolia, Jerome},
+doi = {10.1145/2213836.2213840},
+file = {:K$\backslash$:/研究生课程/流计算/SkewTune Mitigating Skew in MapReduce Applications.pdf:pdf},
+isbn = {978-1-4503-1247-9},
+issn = {21508097},
+journal = {Proceedings of the 2012 ACM SIGMOD International Conference on Management of Data (SIGMOD'12)},
+keywords = {mapreduce,partitioning,skew,user-defined operator},
+pages = {25--36},
+title = {{SkewTune: Mitigating Skew in Mapreduce Applications}},
+year = {2012}
+}
+@article{Ananthanarayanan2014,
+abstract = {In big data analytics timely results, even if based on only part of the data, are often good enough. For this reason, approximation jobs, which have deadline or er- ror bounds and require only a subset of their tasks to complete, are projected to dominate big data workloads. Straggler tasks are an important hurdle when designing approximate data analytic frameworks, and the widely adopted approach to deal with them is speculative ex- ecution. In this paper, we present GRASS, which care- fully uses speculation to mitigate the impact of stragglers in approximation jobs. The design of GRASS is based on first principles analysis of the impact of speculative copies. GRASS delicately balances immediacy of im- proving the approximation goal with the long term impli- cations of using extra resources for speculation. Evalua- tions with production workloads from Facebook and Mi- crosoft Bing in an EC2 cluster of 200 nodes shows that GRASS increases accuracy of deadline-bound jobs by 47{\%} and speeds up error-bound jobs by 38{\%}. GRASS’s design also speeds up exact computations, making it a unified solution for straggler mitigation.},
+author = {Ananthanarayanan, Ganesh and Hung, Michael Chien-Chun and Ren, Xiaoqi and Stoica, Ion and Wierman, Adam and Yu, Minlan},
+file = {:K$\backslash$:/研究生课程/流计算/GRASS Trimming Stragglers in Approximation Analytics.pdf:pdf},
+isbn = {978-1-931971-09-6},
+journal = {Proceedings of the 11th USENIX Symposium on Networked Systems Design and Implementation (NSDI'14)},
+keywords = {sys},
+pages = {289--302},
+title = {{GRASS: Trimming Stragglers in Approximation Analytics}},
+year = {2014}
+}
+@article{Yadwadkar2014,
+abstract = {Straggler tasks continue to be a major hurdle in achieving faster completion of data intensive applications running on modern data-processing frameworks. Existing straggler mitigation techniques are inefficient due to their reactive and replicative nature – they rely on a wait-speculate-reexecute mechanism, thus leading to delayed straggler detection and inefficient resource utilization. Existing proactive techniques also over-utilize resources due to replication. Existing modeling-based approaches are hard to rely on for production-level adoption due to modeling errors.We present Wrangler, a system that proactively avoids situations that cause stragglers. Wrangler automatically learns to predict such situations using a statistical learning technique based on cluster resource utilization counters. Furthermore, Wrangler introduces a notion of a confidence measure with these predictions to overcome the modeling error problems;
+this confidence measure is then exploited to achieve a reliable task scheduling. In particular, by using these predictions to balance delay in task scheduling against the potential for idling of resources, Wrangler achieves a speed up in the overall job completion time. For production-level workloads from Facebook and Cloudera’s customers, Wrangler improves the 99th percentile job completion time by up to 61% as compared to speculative execution, a widely used straggler mitigation technique. Moreover, Wrangler achieves this speed-up while significantly improving the resource consumption (by up to 55%).},
+author = {Yadwadkar, Neeraja J and Ananthanarayanan, Ganesh and Katz, Randy},
+doi = {10.1145/2670979.2671005},
+file = {:K$\backslash$:/研究生课程/流计算/Wrangler Predictable and Faster Jobs using Fewer Resources.pdf:pdf},
+isbn = {9781450332521},
+journal = {Proceedings of the ACM Symposium on Cloud Computing (SoCC'14)},
+pages = {1--14},
+title = {{Wrangler: Predictable and Faster Jobs using Fewer Resources}},
+year = {2014}
+}
+@article{Ananthanarayanan2013,
+abstract = {Small jobs, that are typically run for interactive data anal- yses in datacenters, continue to be plagued by dispropor- tionately long-running tasks called stragglers. In the pro- duction clusters at Facebook and Microsoft Bing, even after applying state-of-the-art straggler mitigation tech- niques, these latency sensitive jobs have stragglers that are on average 8 times slower than themedian task in that job. Such stragglers increase the average job duration by 47{\%}. This is because current mitigation techniques all involve an element of waiting and speculation. We in- stead propose full cloning of small jobs, avoidingwaiting and speculation altogether. Cloning of small jobs only marginally increases utilization because workloads show that while the majority of jobs are small, they only con- sume a small fraction of the resources. The main chal- lenge of cloning is, however, that extra clones can cause contention for intermediate data. We use a technique, de- lay assignment,which efficiently avoids such contention. Evaluation of our system, Dolly, using production work- loads shows that the small jobs speedup by 34{\%} to 46{\%} after state-of-the-artmitigation techniques have been ap- plied, using just 5{\%}extra resources for cloning.},
+author = {Ananthanarayanan, Ganesh and Ghodsi, Ali and Shenker, Scott and Stoica, Ion},
+file = {:K$\backslash$:/研究生课程/流计算/ananthanarayanan{\_}nsdi13{\_}slides.pdf:pdf},
+isbn = {978-1-931971-00-3},
+journal = {Proceedings of the 10th USENIX Symposium on Networked Systems Design and Implementation (NSDI'13)},
+pages = {185--198},
+title = {{Effective Straggler Mitigation: Attack of the Clones.}},
+year = {2013}
+}
+@article{Yu2008,
+author = {Yu, Yuan and Isard, Michael and Fetterly, Dennis and Budiu, Mihai and Erlingsson, {\'{U}}lfar and Gunda, Pradeep Kumar and Currey, Jon},
+doi = {10.1145/1272998.1273005},
+file = {:K$\backslash$:/研究生课程/流计算/DryadLINQ A System for General-Purpose Distributed Data-Parallel Computing Using a High-Level Language.pdf:pdf},
+isbn = {978-1-931971-65-2},
+issn = {01635980},
+journal = {Proceedings of the 8th USENIX Symposium on Operating Systems Design and Implementation (OSDI'08)},
+pages = {1--14},
+title = {{DryadLINQ: A System for General-Purpose Distributed Data-Parallel Computing Using a High-Level Language}},
+year = {2008}
+}
+@article{Li2011,
+abstract = {Today's one-pass analytics applications tend to be data-intensive in nature and require the ability to process high volumes of data efficiently. MapReduce is a popular programming model for processing large datasets using a cluster of machines. However, the traditional MapReduce model is not well-suited for one-pass analytics, since it is geared towards batch processing and requires the data set to be fully loaded into the cluster before running analytical queries. This paper examines, from a systems standpoint, what architectural design changes are necessary to bring the benefits of the MapReduce model to incremental one-pass analytics. Our empirical and theoretical analyses of Hadoop-based MapReduce systems show that the widely-used sort-merge implementation for partitioning and parallel processing poses a fundamental barrier to incremental one-pass analytics, despite various optimizations. To address these limitations, we propose a new data analysis platform that employs hash techniques to enable fast in-memory processing, and a new frequent key based technique to extend such processing to workloads that require a large key-state space. Evaluation of our Hadoop-based prototype using real-world workloads shows that our new platform significantly improves the progress of map tasks, allows the reduce progress to keep up with the map progress, with up to 3 orders of magnitude reduction of internal data spills, and enables results to be returned continuously during the job.},
+author = {Li, Boduo and Mazur, Edward and Diao, Yanlei and McGregor, Andrew and Shenoy, Prashant},
+doi = {10.1145/1989323.1989426},
+file = {:K$\backslash$:/研究生课程/流计算/A Platform for Scalable One-Pass Analytics using MapReduce.pdf:pdf},
+isbn = {9781450306614},
+issn = {07308078},
+journal = {Proceedings of the 2011 international conference on Management of data (SIGMOD'11) },
+keywords = {incremental computation,one-pass analytics,parallel processing},
+pages = {985--996},
+title = {{A platform for scalable one-pass analytics using MapReduce}},
+year = {2011}
+}
+@article{Logothetis2011,
+abstract = {Log analytics are a bedrock component of running many of today's Internet sites. Application and click logs form the basis for tracking and analyzing customer behaviors and preferences, and they form the basic inputs to ad-targeting algorithms. Logs are also critical for performance and security monitoring, debugging, and optimizing the large compute infrastructures that make up the compute "cloud", thousands of machines spanning multiple data centers. With current log generation rates on the order of 1-10 MB/s per machine, a single data center can create tens of TBs of log data a day. While bulk data processing has proven to be an essential tool for log processing, current practice transfers all logs to a centralized compute cluster. This not only consumes large amounts of network and disk bandwidth, but also delays the completion of time-sensitive analytics. We present an in-situ MapReduce architecture that mines data "on location", bypassing the cost and wait time of this store-first-query-later approach. Unlike current approaches, our architecture explicitly supports reduced data fidelity, allowing users to annotate queries with latency and fidelity requirements. This approach fills an important gap in current bulk processing systems, allowing users to trade potential decreases in data fidelity for improved response times or reduced load on end systems. We report on the design and implementation of our in-situ MapReduce architecture, and illustrate how it improves our ability to accommodate increasing log generation rates.},
+author = {Logothetis, Dionysios and Trezzo, Chris and Webb, Kevin C. and Yocum, Kenneth},
+file = {:K$\backslash$:/研究生课程/流计算/In-situ MapReduce for Log Processing.pdf:pdf},
+journal = {Proceedings of the 3rd USENIX conference on Hot Topics in Cloud Computing (HotCloud'11)},
+pages = {26--40},
+title = {{In-situ MapReduce for log processing}},
+year = {2011}
+}
+@article{Logothetis2010,
+abstract = {This work addresses the need for stateful dataflow programs that can rapidly sift through huge, evolving data sets. These data-intensive applications perform complex multi-step computations over successive generations of data inflows, such as weekly web crawls, daily image/video uploads, log files, and growing social networks. While programmers may simply re-run the entire dataflow when new data arrives, this is grossly inefficient, increasing result latency and squandering hardware resources and energy. Alternatively, programmers may use prior results to incrementally incorporate the changes. However, current large-scale data processing tools, such as Map-Reduce or Dryad, limit how programmers incorporate and use state in data-parallel programs. Straightforward approaches to incorporating state can result in custom, fragile code and disappointing performance. This work presents a generalized architecture for continuous bulk processing (CBP) that raises the level of abstraction for building incremental applications. At its core is a flexible, groupwise processing operator that takes state as an explicit input. Unifying stateful programming with a data-parallel operator affords several fundamental opportunities for minimizing the movement of data in the underlying processing system. As case studies, we show how one can use a small set of flexible dataflow primitives to perform web analytics and mine large-scale, evolving graphs in an incremental fashion. Experiments with our prototype using real-world data indicate significant data movement and running time reductions relative to current practice. For example, incrementally computing PageRank using CBP can reduce data movement by 46{\%} and cut running time in half.},
+author = {Logothetis, Dionysios and Olston, Christopher and Reed, Benjamin and Webb, Kevin C. and Yocum, Ken},
+doi = {10.1145/1807128.1807138},
+file = {:K$\backslash$:/研究生课程/流计算/Stateful Bulk Processing for Incremental Analytics.pdf:pdf},
+isbn = {9781450300360},
+journal = {Proceedings of the 1st ACM Symposium on Cloud Computing (SoCC'10)},
+keywords = {cloud computing,incremental,mapreduce,parallel data processing},
+pages = {51--62},
+title = {{Stateful bulk processing for incremental analytics}},
+year = {2010}
+}
+
+@article{Lam2012,
+abstract = {{\{}MapReduce{\}} has emerged as a popular method to process big data. In the past few years, however, not just big data, but fast data has also exploded in volume and availability. Examples of such data include sensor data streams, the Twitter Firehose, and Facebook updates. Numerous applications must process fast data. Can we provide a {\{}MapReduce-style{\}} framework so that developers can quickly write such applications and execute them over a cluster of machines, to achieve low latency and high scalability? In this paper we report on our investigation of this question, as carried out at Kosmix and {\{}WalmartLabs.{\}} We describe {\{}MapUpdate{\}}, a framework like {\{}MapReduce{\}}, but specifically developed for fast data. We describe Muppet, our implementation of {\{}MapUpdate.{\}} Throughout the description we highlight the key challenges, argue why {\{}MapReduce{\}} is not well suited to address them, and briefly describe our current solutions. Finally, we describe our experience and lessons learned with Muppet, which has been used extensively at Kosmix and {\{}WalmartLabs{\}} to power a broad range of applications in social media and e-commerce.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1208.4175v1},
+author = {Lam, Wang and Liu, Lu and Prasad, Sts and Rajaraman, Anand and Vacheri, Zoheb and Doan, AnHai},
+eprint = {arXiv:1208.4175v1},
+file = {:K$\backslash$:/研究生课程/流计算/Muppet MapReduce-Style Processing of Fast Data.pdf:pdf},
+isbn = {2150-8097},
+issn = {2150-8097},
+journal = {Proceedings of VLDB Endowment (VLDB'12)},
+pages = {1814--1825},
+title = {{Muppet: MapReduce-style Processing of Fast Data}},
+year = {2012}
+}
+@article{Abadi2005,
+abstract = {Borealis is a second-generation distributed stream processing$\backslash$n$\backslash$nengine that is being developed at Brandeis University,$\backslash$n$\backslash$nBrown University, and MIT. Borealis inherits$\backslash$n$\backslash$ncore stream processing functionality from Aurora [14]$\backslash$n$\backslash$nand distribution functionality from Medusa [51]. Borealis$\backslash$n$\backslash$nmodifies and extends both systems in non-trivial$\backslash$n$\backslash$nand critical ways to provide advanced capabilities that$\backslash$n$\backslash$nare commonly required by newly-emerging stream processing$\backslash$n$\backslash$napplications.$\backslash$n$\backslash$nIn this paper, we outline the basic design and functionality$\backslash$n$\backslash$nof Borealis. Through sample real-world applications,$\backslash$n$\backslash$nwe motivate the need for dynamically revising$\backslash$n$\backslash$nquery results and modifying query specifications. We$\backslash$n$\backslash$nthen describe how Borealis addresses these challenges$\backslash$n$\backslash$nthrough an innovative set of features, including revision$\backslash$n$\backslash$nrecords, time travel, and control lines. Finally, we$\backslash$n$\backslash$npresent a highly flexible and scalable QoS-based optimization$\backslash$n$\backslash$nmodel that operates across server and sensor$\backslash$n$\backslash$nnetworks and a new fault-tolerance model with flexible$\backslash$n$\backslash$nconsistency-availability trade-offs.},
+author = {Abadi, Daniel J and Ahmad, Yanif and Balazinska, Magdalena and {\c{C}}etintemel, Ugur and Cherniack, Mitch and Hwang, Jeong-Hyon and Lindner, Wolfgang and Maskey, Anurag and Rasin, Alex and Ryvkina, Esther and Tatbul, Nesime and Xing, Ying and Zdonik, Stanley B},
+doi = {http://www.cidrdb.org/cidr2005/papers/P23.pdf},
+file = {:K$\backslash$:/研究生课程/流计算/The Design of the Borealis Stream Processing Engine.pdf:pdf},
+journal = {Conference on Innovative Data Systems Research (CIDR'05)},
+pages = {277--289},
+pmid = {5956130271908022888},
+title = {{The Design of the Borealis Stream Processing Engine.}},
+year = {2005}
+}
+@article{Chandrasekaran2003,
+abstract = {Increasingly pervasive networks are leading towards a world where data is constantly in motion. world, conventional techniques for query adaptive dataflow will be necessary. adaptive query In such a processing, which were developed under the assumption of a far more static and predictable computational environment, will not be sufficient. processing. generation Telegraph system, called TelegraphCQ, Instead, query processors based on The Telegraph project has developed a suite of novel technologies for continuously The next is focused on meeting the challenges that arise in handling large streams of continuous queries over high-volume, highly-variable data streams. In this paper, we describe the system architecture and its underlying technology, and report on our ongoing implementation effort, which leverages the PostgreSQL open source code base. We also discuss open issues and our research agenda.},
+author = {Chandrasekaran, Sirish and Cooper, Owen and Deshpande, Amol and Franklin, Michael J and Hellerstein, Joseph M and Hong, Wei and Krishnamurthy, Sailesh and Madden, Sam and Raman, Vijayshankar and Reiss, Fred and Shah, Mehul},
+doi = {10.1145/872757.872857},
+file = {:K$\backslash$:/研究生课程/流计算/TelegraphCQ Continuous Dataflow Processing for an Uncertain World.pdf:pdf},
+isbn = {158113634X},
+issn = {07308078},
+journal = {Conference on Innovative Data Systems Research (CIDR'03)},
+pages = {668--679},
+pmid = {857010715403872376},
+title = {{TelegraphCQ: Continuous Dataflow Processing for an Uncertain World}},
+year = {2003}
+}
+@article{Toshniwal2014,
+abstract = {This paper describes the use of Storm at Twitter. Storm is a real- time fault-tolerant and distributed stream data processing system. Storm is currently being used to run various critical computations in Twitter at scale, and in real-time. This paper describes the architecture of Storm and its methods for distributed scale-out and fault-tolerance. This paper also describes how queries (aka. topologies) are executed in Storm, and presents some operational stories based on running Storm at Twitter. We also present results from an empirical evaluation demonstrating the resilience of Storm in dealing with machine failures. Storm is under active development at Twitter and we also present some potential directions for future work.},
+author = {Toshniwal, Ankit and Taneja, Siddarth and Shukla, Amit and Ramasamy, Karthik and Patel, Jignesh M and Kulkarni, Sanjeev and Jackson, Jason and Gade, Krishna and Fu, Maosong and Donham, Jake and Bhagat, Nikunj and Mittal, Sailesh and Ryaboy, Dmitriy},
+file = {:K$\backslash$:/研究生课程/流计算/Storm @Twitter .pdf:pdf},
+isbn = {9781450323765},
+journal = {Proceedings of the 2014 ACM SIGMOD international conference on Management of data (SIGMOD'14)},
+pages = {147--156},
+title = {{Storm @ Twitter}},
+year = {2014}
+}
+@article{Sharma2011,
+abstract = {Evaluating the performance of large compute clusters requires benchmarks with representative workloads. At Google, performance benchmarks are used to obtain performance metrics such as task scheduling delays and machine resource utilizations to assess changes in application codes, machine configurations, and scheduling algorithms. Existing approaches to workload characterization for high performance computing and grids focus on task resource requirements for CPU, memory, disk, I/O, network, etc. Such resource requirements address how much resource is consumed by a task. However, in addition to resource requirements, Google workloads commonly include task placement constraints that determine which machine resources are consumed by tasks. Task placement constraints arise because of task dependencies such as those related to hardware architecture and kernel version. This paper develops methodologies for incorporating task placement constraints and machine properties into performance benchmarks of large compute clusters. Our studies of Google compute clusters show that constraints increase average task scheduling delays by a factor of 2 to 6, which often results in tens of minutes of additional task wait time. To understand why, we extend the concept of resource utilization to include constraints by introducing a new metric, the Utilization Multiplier (UM). UM is the ratio of the resource utilization seen by tasks with a constraint to the average utilization of the resource. UM provides a simple model of the performance impact of constraints in that task scheduling delays increase with UM. Last, we describe how to synthesize representative task constraints and machine properties, and how to incorporate this synthesis into existing performance benchmarks. Using synthetic task constraints and machine properties generated by our methodology, we accurately reproduce performance metrics for benchmarks of Google compute clusters with a discrepancy of only 13{\%} in task scheduling delay and 5{\%} in resource utilization.},
+author = {Sharma, Bikash and Chudnovsky, Victor and Hellerstein, Joseph L and Rifaat, Rasekh and Das, Chita R},
+doi = {10.1145/2038916.2038919},
+file = {:K$\backslash$:/研究生课程/流计算/Modeling and Synthesizing Task Placement Constraints in Google Compute Clusters.pdf:pdf},
+isbn = {9781450309769},
+issn = {1450309763},
+journal = {Proceedings of the 2nd ACM Symposium on Cloud Computing (SoCC'11) },
+keywords = {benchmarks,metrics,performance eval,workload characterization},
+pages = {1--14},
+title = {{Modeling and synthesizing task placement constraints in Google compute clusters}},
+year = {2011}
+}
+@article{Kulkarni2015,
+author = {Kulkarni, Sanjeev and Bhagat, Nikunj and Fu, Masong and Kedigehalli, Vikas and Kellogg, Christopher and Mittal, Sailesh and Patel, Jignesh M. and Ramasamy, Karthik and Taneja, Siddarth},
+doi = {10.1145/2723372.2742788},
+file = {:K$\backslash$:/研究生课程/流计算/Twitter Heron Stream Processing at Scale.pdf:pdf},
+isbn = {9781450327589},
+journal = {Proceedings of the 2015 ACM SIGMOD International Conference on Management of Data (SIGMOD'15)},
+keywords = {real-time data processing.,stream data processing systems},
+pages = {239--250},
+title = {{Twitter Heron: Stream Processing at Scale}},
+year = {2015}
+}
+@article{Ananthanarayanan2011,
+abstract = {To improve data availability and resilience MapReduce frameworks use file systems that replicate data uniformly. However, analysis of job logs from a large production cluster shows wide disparity in data popularity. Machines and racks storing ...},
+author = {Ananthanarayanan, Ganesh and Agarwal, Sameer and Kandula, Srikanth and Greenberg, Albert and Stoica, Ion and Harlan, Duke and Harris, Ed},
+doi = {10.1145/1966445.1966472},
+file = {:K$\backslash$:/研究生课程/流计算/Scarlett Coping with Skewed Content Popularity in MapReduce Clusters.pdf:pdf},
+isbn = {9781450306348},
+journal = {Proceedings of the 6th European conference on Computer Systems (EuroSys'11)},
+pages = {287--300},
+title = {{Scarlett: coping with skewed content popularity in mapreduce clusters}},
+year = {2011}
+}
+@article{Xing2005,
+abstract = {Distributed and parallel computing environments are becoming cheap and commonplace. The availability of large numbers of CPU's makes it possible to process more data at higher speeds. Stream-processing systems are also becoming more important, as broad classes of applications require results in real-time. Since load can vary in unpredictable ways, exploiting the abundant processor cycles requires effective dynamic load distribution techniques. Although load distribution has been extensively studied for the traditional pull-based systems, it has not yet been fully studied in the context of push-based continuous query processing. In this paper, we present a correlation based load distribution algorithm that aims at avoiding overload and minimizing end-to-end latency by minimizing load variance and maximizing load correlation. While finding the optimal solution for such a problem is NP-hard, our greedy algorithm can find reasonable solutions in polynomial time. We present both a global algorithm for initial load distribution and a pair-wise algorithm for dynamic load migration.},
+author = {Xing, Ying and Zdonik, Stan and Hwang, Jeong Hyon},
+doi = {10.1109/ICDE.2005.53},
+file = {:K$\backslash$:/研究生课程/流计算/Dynamic Load Distribution in the Borealis Stream Processor.pdf:pdf},
+isbn = {0769522858},
+issn = {10844627},
+journal = {International Conference on Data Engineering (ICDE'05)},
+pages = {791--802},
+title = {{Dynamic load distribution in the borealis stream processor}},
+year = {2005}
+}
+@article{Anis2015,
+abstract = {We study the problem of load balancing in distributed stream processing engines, which is exacerbated in the presence of skew. We introduce Partial Key Grouping (PKG), a new stream partitioning scheme that adapts the classical "power of two choices" to a distributed streaming setting by leveraging two novel techniques: key splitting and local load estimation. In so doing, it achieves better load balancing than key grouping while being more scalable than shuffle grouping. We test PKG on several large datasets, both real-world and synthetic. Compared to standard hashing, PKG reduces the load imbalance by up to several orders of magnitude, and often achieves nearly-perfect load balance. This result translates into an improvement of up to 60{\%} in throughput and up to 45{\%} in latency when deployed on a real Storm cluster.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1504.00788v1},
+author = {Anis, Muhammad and Nasir, Uddin and De, Gianmarco and Morales, Francisci and Kourtellis, Nicolas and Serafini, Marco},
+eprint = {arXiv:1504.00788v1},
+file = {:K$\backslash$:/研究生课程/流计算/The Power of Both Choices Practical Load Balancing for Distributed Stream Processing Engines.pdf:pdf},
+journal = {International Conference on Data Engineering (ICDE'15)},
+pages = {137--148},
+title = {{The Power of Both Choices: Practical Load Balancing for Distributed Stream Processing Engines}},
+year = {2015}
+}
+@article{Shah2003,
+abstract = { The long-running nature of continuous queries poses new scalability challenges for dataflow processing. CQ systems execute pipelined dataflows that may be shared across multiple queries. The scalability of these dataflows is limited by their constituent, stateful operators - e.g. windowed joins or grouping operators. To scale such operators, a natural solution is to partition them across a shared-nothing platform. But in the CQ context, traditional, static techniques for partitioned parallelism can exhibit detrimental imbalances as workload and runtime conditions evolve. Long-running CQ dataflows must continue to function robustly in the face of these imbalances. To address this challenge, we introduce a dataflow operator called flux that encapsulates adaptive state partitioning and dataflow routing. Flux is placed between producer-consumer stages in a dataflow pipeline to repartition stateful operators while the pipeline is still executing. We present the flux architecture, along with repartitioning policies that can be used for CQ operators under shifting processing and memory loads. We show that the flux mechanism and these policies can provide several factors improvement in throughput and orders of magnitude improvement in average latency over the static case.},
+author = {Shah, Mehul a. and Hellerstein, Joseph M. and Chandrasekaran, Sirish and Franklin, Michael J.},
+doi = {10.1109/ICDE.2003.1260779},
+file = {:K$\backslash$:/研究生课程/流计算/Flux An Adaptive Partitioning Operator for Continuous Query System.pdf:pdf},
+isbn = {0-7803-7665-X},
+issn = {10636382},
+journal = {International Conference on Data Engineering (ICDE'03)},
+pages = {25--36},
+title = {{Flux: An adaptive partitioning operator for continuous query systems}},
+year = {2003}
+}
+@article{Cherniack2003,
+author = {Cherniack, Mitch and Balakrishnan, Hari and Balazinska, Magdalena},
+file = {:K$\backslash$:/研究生课程/流计算/Scalable Distributed Stream Join Processing.pdf:pdf},
+isbn = {9781450327589},
+journal = {Conference on Innovative Data Systems Research (CIDR'03)},
+keywords = {Data Streams,Distributed System,Stream Join},
+pages = {811--825},
+title = {{Scalable Distributed Stream Processing}},
+year = {2003}
+}
+@article{Peng2010,
+abstract = {Updating an index of the web as documents are crawled requires continuously transforming a large repository of existing documents as new documents ar- rive. This task is one example of a class of data pro- cessing tasks that transform a large repository of data via small, independent mutations. These tasks lie in a gap between the capabilities of existing infrastructure. Databases do not meet the storage or throughput require- ments of these tasks: Googles indexing system stores tens of petabytes of data and processes billions of up- dates per day on thousands of machines. MapReduce and other batch-processing systems cannot process small up- dates individually as they rely on creating large batches for efficiency. We have built Percolator, a system for incrementally processing updates to a large data set, and deployed it to create the Google web search index. By replacing a batch-based indexing system with an indexing system based on incremental processing using Percolator, we process the same number of documents per day, while reducing the average age of documents in Google search results by 50{\%}.},
+author = {Peng, Daniel and Dabek, Frank},
+file = {:K$\backslash$:/研究生课程/流计算/Large-scale incremental Processing Using Distributed Transactions and Notifications.pdf:pdf},
+isbn = {9781931971799},
+issn = {<null>},
+journal = {Proceedings of the 10th USENIX Symposium on Operating Systems Design and Implementation (OSDI'10)},
+pages = {1--15},
+title = {{Large-scale Incremental Processing Using Distributed Transactions and Notifications}},
+year = {2010}
+}
+@article{Bhatotia2011a,
+abstract = {Many online data sets evolve over time as new entries are slowly added and existing entries are deleted or modified. Taking advantage of this, systems for incremental bulk data processing, such as Google's Percolator, can achieve efficient updates. To achieve this efficiency, however, these systems lose compatibility with the simple programming models offered by non-incremental systems, e.g., MapReduce, and more importantly, requires the programmer to implement application-specific dynamic algorithms, ultimately increasing algorithm and code complexity. In this paper, we describe the architecture, implementation, and evaluation of Incoop, a generic MapReduce framework for incremental computations. Incoop detects changes to the input and automatically updates the output by employing an efficient, fine-grained result reuse mechanism. To achieve efficiency without sacrificing transparency, we adopt recent advances in the area of programming languages to identify the shortcomings of task-level memoization approaches, and to address these shortcomings by using several novel techniques: a storage system, a contraction phase for Reduce tasks, and an affinity-based scheduling algorithm. We have implemented Incoop by extending the Hadoop framework, and evaluated it by considering several applications and case studies. Our results show significant performance improvements without changing a single line of application code.},
+author = {Bhatotia, Pramod and Wieder, Alexander and Rodrigues, Rodrigo and Acar, Umut a and Pasquin, Rafael},
+doi = {10.1145/2038916.2038923},
+file = {:K$\backslash$:/研究生课程/流计算/Incoop MapReduce for Incremental Computations.pdf:pdf},
+isbn = {9781450309769},
+issn = {1450309763},
+journal = {Proceedings of the 2nd ACM Symposium on Cloud Computing (SoCC'11)},
+keywords = {memoization,self-adjusting computation,stability},
+pages = {1--14},
+pmid = {11412367},
+title = {{Incoop: MapReduce for incremental computations}},
+year = {2011}
+}
+@article{Isard2009,
+abstract = {This paper addresses the problem of scheduling concurrent jobs on clusters where application data is stored on the computing nodes. This setting, in which scheduling computations close to their data is crucial for performance, is increasingly common and arises in systems such as MapReduce, Hadoop, and Dryad as well as many grid-computing environments. We argue that data-intensive computation benefits from a fine-grain resource sharing model that differs from the coarser semi-static resource allocations implemented by most existing cluster computing architectures. The problem of scheduling with locality and fairness constraints has not previously been extensively studied under this resource-sharing model. We introduce a powerful and flexible new framework for scheduling concurrent distributed jobs with fine-grain resource sharing. The scheduling problem is mapped to a graph datastructure, where edge weights and capacities encode the competing demands of data locality, fairness, and starvation-freedom, and a standard solver computes the optimal online schedule according to a global cost model. We evaluate our implementation of this framework, which we call Quincy, on a cluster of a few hundred computers using a varied workload of data-and CPU-intensive jobs. We evaluate Quincy against an existing queue-based algorithm and implement several policies for each scheduler, with and without fairness constraints. Quincy gets better fairness when fairness is requested, while substantially improving data locality. The volume of data transferred across the cluster is reduced by up to a factor of 3.9 in our experiments, leading to a throughput increase of up to 40{\%}.},
+author = {Isard, Michael and Prabhakaran, Vijayan and Currey, Jon and Wieder, Udi and Talwar, Kunal and Goldberg, Andrew},
+doi = {10.1145/1629575.1629601},
+file = {:K$\backslash$:/研究生课程/流计算/Quincy Fair Scheduling for Distributed Computing Clusters.pdf:pdf},
+isbn = {9781605587523},
+issn = {978-1-60558-752-3},
+journal = {Proceedings of the ACM SIGOPS 22nd Symposium on Operating Systems Principles (SOSP'09)},
+keywords = {cluster scheduling, dryad, fair scheduling, mapred},
+pages = {261--276},
+title = {{Quincy : Fair Scheduling for Distributed Computing Clusters}},
+year = {2009}
+}
+@article{Ahmad2012,
+abstract = {Data center-scale clusters are evolving towards heterogeneous hardware for power, cost, differentiated price-performance, and other reasons. MapReduce is a well-known programming model to process large amount of data on data center-scale clusters. Most MapReduce implementations have been designed and optimized for homogeneous clusters. Unfortunately, these implementations perform poorly on heterogeneous clusters (e.g., on a 90-node cluster that contains 10 Xeon-based servers and 80 Atom-based servers, Hadoop performs worse than on 10-node Xeon-only or 80- node Atom-only homogeneous sub-clusters for many of our benchmarks). This poor performance remains despite previously proposed optimizations related to management of straggler tasks. In this paper, we address MapReduces poor performance on heterogeneous clusters. Our first contribution is that the poor performance is due to two key factors: (1) the non-intuitive effect that MapReduce's built-in load balancing results in excessive and bursty network communication during the Map phase, and (2) the intuitive effect that the heterogeneity amplifies load imbalance in the Reduce computation. Our second contribution is Tarazu, a suite of optimizations to improve MapReduce performance on heterogeneous clusters. Tarazu consists of (1) Communication-Aware Load Balancing of Map computation (CALB) across the nodes, (2) Communication- Aware Scheduling of Map computation (CAS) to avoid bursty network traffic and (3) Predictive Load Balancing of Reduce computation (PLB) across the nodes. Using the above 90-node cluster, we show that Tarazu significantly improves performance over a baseline of Hadoop with straightforward tuning for hardware heterogeneity.},
+author = {Ahmad, Faraz and Chakradhar, Srimat and Raghunathan, Anand and Vijaykumar, T N},
+doi = {10.1145/2189750.2150984},
+file = {:K$\backslash$:/研究生课程/流计算/Tarazu Optimizing MapReduce On Heterogeneous Clusters.pdf:pdf},
+isbn = {9781450307598},
+issn = {01635964},
+journal = {Proceedings of the 17th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS'12)},
+keywords = {cluster scheduling,heterogeneous clusters,imbalance,load,mapreduce,shuffle},
+pages = {61--74},
+title = {{Tarazu : Optimizing MapReduce On Heterogeneous Clusters}},
+year = {2012}
+}
+@article{Ananthanarayanan2010,
+abstract = {Experience froman operational Map-Reduce cluster reveals that outliers significantly prolong job completion. The causes for outliers include run-time contention for processor, memory and other resources, disk failures, varying bandwidth and congestion along network paths and, imbalance in task workload. We present Mantri, a system that monitors tasks and culls outliers using cause- and resource-aware techniques. Mantri's strategies include restarting outliers, network-aware placement of tasks and protecting outputs of valuable tasks. Using real-time progress reports, Mantri detects and acts on outliers early in their lifetime. Early action frees up resources that can be used by subsequent tasks and expedites the job overall. Acting based on the causes and the resource and opportunity cost of actions lets Mantri improve over prior work that only duplicates the laggards. Deployment in Bing's production clusters and trace-driven simulations show that Mantri improves job completion times by 32{\%}.},
+author = {Ananthanarayanan, Ganesh and Kandula, Srikanth and Greenberg, Albert and Stoica, Ion and Lu, Yi and Saha, Bikas and Harris, Edward},
+file = {:K$\backslash$:/研究生课程/流计算/Reining in the Outliers in Map-Reduce Clusters using Mantri.pdf:pdf},
+isbn = {978-1-931971-79-9},
+journal = {Proceedings of the 9th USENIX Symposium on Operating Systems Design and Implementation (OSDI'10)},
+pages = {24-37},
+title = {{Reining in the Outliers in Map-reduce Clusters Using Mantri}},
+year = {2010}
+}
+@article{Ousterhout,
+abstract = {We argue for breaking data-parallel jobs in compute clusters into tiny tasks that each complete in hundreds of milliseconds. Tiny tasks avoid the need for complex skew mitigation techniques: by breaking a large job into millions of tiny tasks, work will be evenly spread over available resources by the scheduler. Furthermore, tiny tasks alleviate long wait times seen in today’s clusters for interactive jobs: even large batch jobs can be split into small tasks that finish quickly. We demonstrate a 5.2x improvement in response times due to the use of smaller tasks. In current data-parallel computing frameworks, high task launch overheads and scalability limitations prevent users from running short tasks. Recent research has addressed many of these bottlenecks; we discuss remaining challenges and propose a task execution framework that can efficiently support tiny tasks.},
+author = {Ousterhout, Kay and Panda, Aurojit and Rosen, Joshua and Venkataraman, Shivaram and Xin, Reynold and Ratnasamy, Sylvia and Shenker, Scott and Stoica, Ion},
+file = {:K$\backslash$:/研究生课程/流计算/tinytasks-hotos-talk.pdf:pdf},
+journal = {Proceedings of the 14th USENIX Conference on Hot Topics in Operating Systems (HotOS'13)},
+title = {{The Case for Tiny Tasks in Compute Clusters}},
+year = {2013}
+}
+@article{Das2014,
+abstract = {The need for real-time processing of ``big data'' has led to the development of frameworks for distributed stream processing in clusters. It is important for such frameworks to be robust against variable operating conditions such as server failures, changes in data ingestion rates, and workload characteristics. To provide fault tolerance and efficient stream processing at scale, recent stream processing frameworks have proposed to treat streaming workloads as a series of batch jobs on small batches of streaming data. However, the robustness of such frameworks against variable operating conditions has not been explored. In this paper, we explore the effect of the size of batches on the performance of streaming workloads. The throughput and end-to-end latency of the system can have complicated relationships with batch sizes, data ingestion rates, variations in available resources, workload characteristics, etc. We propose a simple yet robust control algorithm that automatically adapts batch sizes as the situation necessitates. We show through extensive experiments that this algorithm is powerful enough to ensure system stability and low end-to-end latency for a wide class of workloads, despite large variations in data rates and operating conditions.},
+author = {Das, Tathagata and Zhong, Yuan and Stoica, Ion and Shenker, Scott},
+doi = {10.1145/2670979.2670995},
+file = {:K$\backslash$:/研究生课程/流计算/Adaptive Stream Processing using Dynamic Batch Sizing.pdf:pdf},
+isbn = {9781450332521},
+journal = {Proceedings of the ACM Symposium on Cloud Computing (SoCC'14)},
+pages = {1--13},
+title = {{Adaptive Stream Processing using Dynamic Batch Sizing}},
+year = {2014}
+}
+@article{Xie2010,
+abstract = {MapReduce has become an important distributed processing model for large-scale data-intensive applications like data mining and web indexing. Hadoop-an open-source implementation of MapReduce is widely used for short jobs requiring low response time. The current Hadoop implementation assumes that computing nodes in a cluster are homogeneous in nature. Data locality has not been taken into account for launching speculative map tasks, because it is assumed that most maps are data-local. Unfortunately, both the homogeneity and data locality assumptions are not satisfied in virtualized data centers. We show that ignoring the data-locality issue in heterogeneous environments can noticeably reduce the MapReduce performance. In this paper, we address the problem of how to place data across nodes in a way that each node has a balanced data processing load. Given a dataintensive application running on a Hadoop MapReduce cluster, our data placement scheme adaptively balances the amount of data stored in each node to achieve improved data-processing performance. Experimental results on two real data-intensive applications show that our data placement strategy can always improve the MapReduce performance by rebalancing data across nodes before performing a data-intensive application in a heterogeneous Hadoop cluster.},
+author = {Xie, Jiong Xie Jiong and Yin, Shu Yin Shu and Ruan, Xiaojun Ruan Xiaojun and Ding, Zhiyang Ding Zhiyang and Tian, Yun Tian Yun and Majors, J. and Manzanares, A. and Qin, Xiao Qin Xiao},
+doi = {10.1109/IPDPSW.2010.5470880},
+file = {:K$\backslash$:/研究生课程/流计算/Improving MapReduce Performance through Data Placement in Heterogeneous Hadoop Clusters.pdf:pdf},
+isbn = {978-1-4244-6533-0},
+issn = {00396028},
+journal = {2010 IEEE International Symposium on Parallel {\&}amp;amp; Distributed Processing, Workshops and Phd Forum (IPDPSW'10)},
+pages = {29--42},
+title = {{Improving MapReduce performance through data placement in heterogeneous Hadoop clusters}},
+year = {2010}
+}
+@article{Wang2015,
+abstract = {As a widely used programming model and implementation for processing large data sets, MapReduce performs poorly on heterogeneous clusters, which, unfortunately, are common in current computing environments. To deal with the problem, this paper: 1) analyzes the causes of performance degradation and identifies the key one as the large volume of inter-node data transfer resulted from even data distribution among nodes of different computing capabilities, and 2) proposes ActCap, a solution that uses a Markov chain based model to do node-capability-aware data placement for the continuously incoming data. ActCap has been incorporated into Hadoop and evaluated on a 24-node heterogeneous cluster by 13 benchmarks. The experimental results show that ActCap can reduce the percentage of inter-node data transfer from 32.9% to 7.7% and gain an average speedup of 49.8% when compared with Hadoop, and achieve an average speedup of 9.8% when compared with Tarazu, the latest related work.},
+author = {Wang, Bo and Jiang, Jinlei and Yang, Guangwen},
+doi = {10.1109/INFOCOM.2015.7218509},
+file = {:K$\backslash$:/研究生课程/流计算/Accelerating MapReduce on Hetrogeneous Clusters with Capability-Aware Data Placement.pdf:pdf},
+isbn = {9781479983810},
+journal = {2015 IEEE International Conference on Computer Communications (INFOCOM'15)},
+keywords = {big data,data place-,heterogeneous clusters,load balancing,mapreduce,ment},
+title = {{ActCap : Accelerating MapReduce on Heterogeneous Clusters with Capability-Aware Data Placement}},
+year = {2015}
+}
+@article{tinytasks,
+abstract = {We argue for breaking data-parallel jobs in compute clusters into tiny tasks that each complete in hundreds of milliseconds. Tiny tasks avoid the need for complex skew mitigation techniques: by breaking a large job into millions of tiny tasks, work will be evenly spread over available resources by the scheduler. Furthermore, tiny tasks alleviate long wait times seen in today’s clusters for interactive jobs: even large batch jobs can be split into small tasks that finish quickly. We demonstrate a 5.2x improvement in response times due to the use of smaller tasks. In current data-parallel computing frameworks, high task launch overheads and scalability limitations prevent users from running short tasks. Recent research has addressed many of these bottlenecks; we discuss remaining challenges and propose a task execution framework that can efficiently support tiny tasks.},
+author = {Ousterhout, Kay and Panda, Aurojit and Rosen, Joshua and Venkataraman, Shivaram and Xin, Reynold and Ratnasamy, Sylvia and Shenker, Scott and Stoica, Ion},
+file = {:K$\backslash$:/研究生课程/流计算/tinytasks-hotos-talk.pdf:pdf},
+journal = {Proceedings of the 14th USENIX Conference on Hot Topics in Operating Systems (HotOS'13)},
+title = {{The Case for Tiny Tasks in Compute Clusters}},
+year = {2013}
+}
+@misc{HadoopC,
+title = "Hadoop's Capacity Scheduler",
+howpublished = "http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html"
+}
+@misc{HadoopF,
+title = "Hadoop's Fair Scheduler",
+howpublished = "http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/FairScheduler.html"
+}
