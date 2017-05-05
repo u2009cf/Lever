@@ -4,9 +4,9 @@
 
 \subsection{Experimental Setup and Workloads}
 
-  \textbf{Experimental Setup.} Our evaluations are conducted on a heterogeneous cluster consisting of two types of machines with different configurations. The first kind of machines is comprised of eight dual-core Intel Xeon E5-2670 2.6 GHZ CPUs(a total of 16 cores), 64GB memory, and 210GB disks. The second kind of machines consists of two dual-core 1.2 GHZ Intel CPU, 16GB memory, and 210GB disks. All computers are interconnected with 1Gbps Ethernet cards. We use spark-1.3.0 as the distributed computing platform and Redhat Enterprise Linux 6.2 with the kernel version 2.6.32 as the OS.
+  \textbf{Experimental Setup.} Our evaluations are conducted on a heterogeneous cluster consisting of two types of machines with different configurations. The first kind of machines is comprised of two dual-core Intel Xeon E5-2670 2.6 GHz CPUs, 16GB memory, and 210GB disks. The second kind of machines consists of two dual-core 1.2 GHz Intel CPU, 4GB memory, and 210GB disks. All computers are interconnected with 1Gbps Ethernet cards. We use spark-1.3.0 as the distributed computing platform and Redhat Enterprise Linux 6.2 with the kernel version 2.6.32 as the OS.
 
-  \textbf{Workloads.} Table \uppercase\expandafter{\romannumeral2} describes the benchmarks used in our experiments. Similar to previous work \cite{Zaharia2013}, we choose three typical applications i.e. Grep, WordCount, and TopK. In addition, we also use the HiBench \cite{HiBench} benchmark including Identity, Sample and Projection. We rewrite the HiBench \cite{HiBench} benchmark based on receiver model.
+  \textbf{Workloads.} Table \uppercase\expandafter{\romannumeral2} describes the benchmarks used in our experiments. Similar to previous work \cite{Zaharia2013}, we choose three typical applications i.e. Grep, WordCount, and TopK. In addition, we also use the HiBench \cite{HiBench} benchmark including Identity, Sample and Projection. We rewrite the HiBench \cite{HiBench} benchmark based on receiver model. We use the real datasets of internet traffic archive available in \cite{datasets} as stream data source.
   \begin{table*}[htbp]
     \footnotesize
     \centering
@@ -128,4 +128,4 @@
     \label{Fig. 15:}
   \end{figure}
 
-  In summary, allStrategy is suitable for few stragglers and few fasters and twoChoiceStrategy is more suitable for many stragglers or many fasters. Lever can choose one of the two adaptively to ensure the performance.
+  In summary, allStrategy is suitable for few stragglers and few fasters and twoChoiceStrategy is more suitable for many stragglers or many fasters. Lever can choose one of the two adaptively to ensure the performance. 
